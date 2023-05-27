@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 710px;
+    height: 505px;
+    box-shadow:3px 4px 20px 0px rgb(194, 194, 255);
+    border-radius: 30px;
+}
+
+.left-box {
+    background-image: linear-gradient(to top, rgb(44, 27, 226), rgb(96, 46, 233));
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px;
+}
+
+.total,
+.de {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.total {
+    margin-top: 70px;
+    font-size: 80px;
+    color: #fff;
+    font-weight: 600;
+    position: relative;
+    z-index: 10;
+}
+
+.total::before {
+    content: '';
+    width: 190px;
+    height: 180px;
+    position: absolute;
+    border-radius: 100px;
+    transform: scale(1.05);
+    background-image: linear-gradient(to top, rgb(49, 34, 215), rgb(67, 6, 188));
+    z-index: -10;
+    top: -30px;
+}
+
+.de {
+    color: rgba(155, 154, 154, 0.753);
+    font-size: 1.2em;
+    z-index: 10;
+    position: relative;
+}
+
+.titulo {
+    color: rgba(215, 215, 215, 0.826);
+    font-size: 25px;
+}
+
+.descricao > h1, h2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.descricao > h1 {
+    color: #fff;
+    margin: 25px;
+}
+
+.descricao > h2 {
+    color: rgba(215, 215, 215, 0.673);
+    font-size: 20px;
+    font-weight: 290;
+} 
+
+
+.right-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 30px;
+    width: 691px;
+    height: 503px;
+}
+
+.right-box > h1 {
+    position: relative;
+    left: -78px;
+    top: 14px;
+    font-size: 27px;
+    color: #394261ff;
+    font-weight: bold;
+}
+
+.itens {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-between;
+    flex-wrap: wrap;
+    width: 288px;
+    height: 302px;
+    font-size: 20px;
+}
+
+
+.reaction {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 282px;
+    height: 55px;
+    border-radius: 11px;
+    background-color: rgba(223, 116, 123, 0.161);
+}
+
+.memory {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 282px;
+    height: 55px;
+    border-radius: 11px;
+    background-color: rgba(228, 182, 97, 0.127);
+}
+
+.verbal {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 282px;
+    height: 55px;
+    border-radius: 11px;
+    background-color: rgba(118, 216, 185, 0.158);
+}
+
+.visual {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 282px;
+    height: 55px;
+    border-radius: 11px;
+    background-color: rgba(83, 94, 218, 0.099);;
+}
+
+img {
+    width: 20px;
+    height: 20px;
+}
+
+.name {
+    position: relative;
+}
+
+.reaction > .name {
+    color: rgb(221, 122, 128);
+    font-weight: 900;
+    left: -25px;
+}
+
+.memory > .name {
+    color: rgb(230, 210, 63);
+    left: -25px;
+    font-weight: 900;
+}
+
+.visual > .name {
+    color: rgb(57, 64, 211);
+    left: -30px;
+    font-weight: 900;
+}
+
+.verbal > .name {
+    color: rgb(63, 226, 161);
+    left: -30px;
+    font-weight: 900;
+}
+
+.number1 {
+    font-weight: bold;
+    color: #394261ff;
+}
+
+.number2 {
+    color: #999999b0;
+}
+
+button {
+    border: none;
+    outline: none;
+    background-color: rgb(45, 57, 98);
+    color: #fff;
+    width: 257px;
+    height: 50px;
+    border-radius: 30px;
+    transform: scale(1.1);
+    position: relative;
+    bottom: 10px;
+    font-weight: 550;
+    font-size: 1.05em;
+    margin-top: 12px;
+    transition: hover, 0.2s;
+}
+
+button:hover {
+    transform: scale(1.14);
+    background-color: rgb(28, 44, 105);
+}
